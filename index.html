@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-
-<html ng-app="demo">
-	<head>
-		<meta name="viewport" content="width=device-width" />
-		<title text="">Angular JS Sliding Menu</title>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<title text="">Chat with Len</title>
 		
-		<style type="text/less" src="stylesheet.less"></style>
+    <header class="w3-container w3-lime">
+      <h1>Len</h1>
+      <h2>A listening bot</h2>
+    </header>
 		
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
 		
 		<script type="text/javascript" src="index.js"></script>
 	</head>
-	<body ng-controller="modalDemo">
-		<h1>Angular JS Sliding Menu</h1>
-		<span>This page demonstrates how a menu panel can be slid in from the side of the screen using Angular JS. It's a great directive to use for mobile devices.</span>
-		<span>The menu itself is an Angular JS directive, and I'm using LESS CSS for some of the more complicated CSS rules. I highly recommend you check them out.</span>
-		<button ng-click="showLeft($event)">Show Left Menu!</button>
-        <button ng-click="showRight($event)">Show Right Menu!</button>
-		
-		<menu visible="leftVisible" alignment="left">
-            <menu-item hash="first-page">First Page</menu-item>
-            <menu-item hash="second-page">Second Page</menu-item>
-            <menu-item hash="third-page">Third Page</menu-item>
-        </menu>
-        
-        <menu visible="rightVisible" alignment="right">
-            <menu-item hash="first-page">First Page</menu-item>
-            <menu-item hash="second-page">Second Page</menu-item>
-            <menu-item hash="third-page">Third Page</menu-item>
-        </menu>
+	<body>
+      <div class="w3-container w3-border w3-round">
+        <p>chatter chatter with the bot here</p>
+      </div>
+      
+      <form class="w3-container w3-light-grey">
+        <input class="w3-input w3-border-0 w3-round-large" type="text" placeholder="Type type type">
+      </form>
 	</body>
+  <footer class="w3-container w3-lime">
+    <h5>Footer</h5>
+    <p>Footer information goes here</p>
+  </footer> 
 </html>
